@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import BasicLoginForm from "./components/BasicLoginForm/BasicLoginForm";
+import Intersection from "./components/Intersection/Intersection";
+import IsEmptyDeep from "./components/IsEmptyDeep/IsEmptyDeep";
+import Unique from "./components/Unique/Unique";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <div>
+                    <Unique />
+                    <Intersection />
+                    <IsEmptyDeep />
+                    <BasicLoginForm />
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
